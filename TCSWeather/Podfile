@@ -11,6 +11,7 @@ target 'TCSWeather' do
   pod 'Moya'
   pod 'MoyaMapper'
   pod 'RxFlow'
+  pod 'NSObject+Rx'
 
   target 'TCSWeatherTests' do
     inherit! :search_paths

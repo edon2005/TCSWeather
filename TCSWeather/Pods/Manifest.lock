@@ -11,6 +11,8 @@ PODS:
   - MoyaMapper/Core (1.1.5):
     - Moya (>= 11.0.0)
     - SwiftyJSON
+  - "NSObject+Rx (4.4.1)":
+    - RxSwift (~> 4.3)
   - Result (4.1.0)
   - RxAtomic (4.4.1)
   - RxCocoa (4.4.1):
@@ -26,6 +28,7 @@ DEPENDENCIES:
   - EasyPeasy
   - Moya
   - MoyaMapper
+  - "NSObject+Rx"
   - RxFlow
   - RxSwift
 
@@ -35,6 +38,7 @@ SPEC REPOS:
     - EasyPeasy
     - Moya
     - MoyaMapper
+    - "NSObject+Rx"
     - Result
     - RxAtomic
     - RxCocoa
@@ -47,6 +51,7 @@ SPEC CHECKSUMS:
   EasyPeasy: bfffe5d47bbaaef3e32888c250a196768484b43a
   Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
   MoyaMapper: eddca82d59edd78797a44f92bed43696281d38d5
+  "NSObject+Rx": 9884a92f19b610795c431e10b4e601913b59c9e9
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
   RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
@@ -54,6 +59,6 @@ SPEC CHECKSUMS:
   RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 1e630768e8391c9ad4a54efbe2d4ee71acdc75fd
+PODFILE CHECKSUM: bf97a019a2e32885574cfe34cf011785304580e2
 
 COCOAPODS: 1.6.1
