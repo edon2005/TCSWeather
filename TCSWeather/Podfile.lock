@@ -1,16 +1,19 @@
 PODS:
   - Alamofire (4.8.1)
   - EasyPeasy (1.8.0)
+  - ModelMapper (9.0.1):
+    - ModelMapper/Core (= 9.0.1)
+  - ModelMapper/Core (9.0.1)
   - Moya (12.0.1):
     - Moya/Core (= 12.0.1)
+  - Moya-ModelMapper (8.0.0):
+    - Moya-ModelMapper/Core (= 8.0.0)
+  - Moya-ModelMapper/Core (8.0.0):
+    - ModelMapper
+    - Moya (~> 12.0)
   - Moya/Core (12.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 4.0)
-  - MoyaMapper (1.1.5):
-    - MoyaMapper/Core (= 1.1.5)
-  - MoyaMapper/Core (1.1.5):
-    - Moya (>= 11.0.0)
-    - SwiftyJSON
   - "NSObject+Rx (4.4.1)":
     - RxSwift (~> 4.3)
   - Result (4.1.0)
@@ -22,43 +25,46 @@ PODS:
     - RxSwift (>= 4.4.0)
   - RxSwift (4.4.1):
     - RxAtomic (~> 4.4)
-  - SwiftyJSON (4.2.0)
+  - Swinject (2.5.0)
 
 DEPENDENCIES:
   - EasyPeasy
   - Moya
-  - MoyaMapper
+  - Moya-ModelMapper
   - "NSObject+Rx"
   - RxFlow
   - RxSwift
+  - Swinject
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - EasyPeasy
+    - ModelMapper
     - Moya
-    - MoyaMapper
+    - Moya-ModelMapper
     - "NSObject+Rx"
     - Result
     - RxAtomic
     - RxCocoa
     - RxFlow
     - RxSwift
-    - SwiftyJSON
+    - Swinject
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   EasyPeasy: bfffe5d47bbaaef3e32888c250a196768484b43a
+  ModelMapper: 89a61430a75e6265040dc9555ab1feddeb25b986
   Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
-  MoyaMapper: eddca82d59edd78797a44f92bed43696281d38d5
+  Moya-ModelMapper: 9032a62301f6489405d56b7bb4e1f54944638fe3
   "NSObject+Rx": 9884a92f19b610795c431e10b4e601913b59c9e9
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
   RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
   RxFlow: f0212025e3747431b3be09c6be04bfde0a3bf5a4
   RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
-  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
 
-PODFILE CHECKSUM: bf97a019a2e32885574cfe34cf011785304580e2
+PODFILE CHECKSUM: 1cbf4217f26d693bbadf342bec1aa8449e258029
 
 COCOAPODS: 1.6.1

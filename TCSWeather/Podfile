@@ -9,9 +9,10 @@ target 'TCSWeather' do
   pod 'EasyPeasy'
   pod 'RxSwift'
   pod 'Moya'
-  pod 'MoyaMapper'
+  pod 'Moya-ModelMapper'
   pod 'RxFlow'
   pod 'NSObject+Rx'
+  pod 'Swinject'
 
   target 'TCSWeatherTests' do
     inherit! :search_paths

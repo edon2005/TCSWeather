@@ -11,14 +11,25 @@
 		EF80CEF2BE2F686DF5E3850C /* Pods_TCSWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 026B37C6AD562BD728BD83C9 /* Pods_TCSWeather.framework */; };
 		F6EC981C2232880900FC17F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EC981B2232880900FC17F7 /* AppDelegate.swift */; };
 		F6EC981E2232880900FC17F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EC981D2232880900FC17F7 /* ViewController.swift */; };
-		F6EC98212232880900FC17F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6EC981F2232880900FC17F7 /* Main.storyboard */; };
 		F6EC98232232880C00FC17F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6EC98222232880C00FC17F7 /* Assets.xcassets */; };
-		F6EC98262232880C00FC17F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6EC98242232880C00FC17F7 /* LaunchScreen.storyboard */; };
 		F6EC98312232880C00FC17F7 /* TCSWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EC98302232880C00FC17F7 /* TCSWeatherTests.swift */; };
 		F6EC983D223289EB00FC17F7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EC983C223289EB00FC17F7 /* Constants.swift */; };
 		F6EC984022328A2800FC17F7 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EC983F22328A2800FC17F7 /* Units.swift */; };
 		F6EC984422328B5C00FC17F7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EC984322328B5C00FC17F7 /* BaseViewController.swift */; };
 		F6EC984622328B8000FC17F7 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EC984522328B8000FC17F7 /* BaseView.swift */; };
+		F6EC98492232999600FC17F7 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EC98482232999600FC17F7 /* AppFlow.swift */; };
+		F6EC984D22329A1300FC17F7 /* ioCentroType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EC984C22329A1300FC17F7 /* ioCentroType.swift */; };
+		F6EC984F22329A8000FC17F7 /* ioCentro.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EC984E22329A8000FC17F7 /* ioCentro.swift */; };
+		F6EC985122329AB100FC17F7 /* ioBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EC985022329AB100FC17F7 /* ioBase.swift */; };
+		F6EC985322329B9A00FC17F7 /* ioError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EC985222329B9A00FC17F7 /* ioError.swift */; };
+		F6EC985522329BE800FC17F7 /* ioRequestAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EC985422329BE800FC17F7 /* ioRequestAccess.swift */; };
+		F6EC985722329C0900FC17F7 /* ioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EC985622329C0900FC17F7 /* ioService.swift */; };
+		F6EC985922329C2E00FC17F7 /* ioTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EC985822329C2E00FC17F7 /* ioTransform.swift */; };
+		F6EC985C22329F9500FC17F7 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EC985B22329F9500FC17F7 /* String.swift */; };
+		F6EC985E2232A13200FC17F7 /* WeatherStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EC985D2232A13200FC17F7 /* WeatherStep.swift */; };
+		F6EC98602232AEF000FC17F7 /* SplashFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EC985F2232AEF000FC17F7 /* SplashFlow.swift */; };
+		F6EC98632232B2A500FC17F7 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EC98622232B2A500FC17F7 /* SplashViewController.swift */; };
+		F6EC98652232B2BA00FC17F7 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EC98642232B2BA00FC17F7 /* SplashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +52,7 @@
 		F6EC98182232880900FC17F7 /* TCSWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCSWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6EC981B2232880900FC17F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6EC981D2232880900FC17F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F6EC98202232880900FC17F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6EC98222232880C00FC17F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F6EC98252232880C00FC17F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6EC98272232880C00FC17F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6EC982C2232880C00FC17F7 /* TCSWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCSWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6EC98302232880C00FC17F7 /* TCSWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCSWeatherTests.swift; sourceTree = "<group>"; };
@@ -52,6 +61,19 @@
 		F6EC983F22328A2800FC17F7 /* Units.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
 		F6EC984322328B5C00FC17F7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F6EC984522328B8000FC17F7 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		F6EC98482232999600FC17F7 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
+		F6EC984C22329A1300FC17F7 /* ioCentroType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ioCentroType.swift; sourceTree = "<group>"; };
+		F6EC984E22329A8000FC17F7 /* ioCentro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ioCentro.swift; sourceTree = "<group>"; };
+		F6EC985022329AB100FC17F7 /* ioBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ioBase.swift; sourceTree = "<group>"; };
+		F6EC985222329B9A00FC17F7 /* ioError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ioError.swift; sourceTree = "<group>"; };
+		F6EC985422329BE800FC17F7 /* ioRequestAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ioRequestAccess.swift; sourceTree = "<group>"; };
+		F6EC985622329C0900FC17F7 /* ioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ioService.swift; sourceTree = "<group>"; };
+		F6EC985822329C2E00FC17F7 /* ioTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ioTransform.swift; sourceTree = "<group>"; };
+		F6EC985B22329F9500FC17F7 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		F6EC985D2232A13200FC17F7 /* WeatherStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStep.swift; sourceTree = "<group>"; };
+		F6EC985F2232AEF000FC17F7 /* SplashFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashFlow.swift; sourceTree = "<group>"; };
+		F6EC98622232B2A500FC17F7 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		F6EC98642232B2BA00FC17F7 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,11 +132,12 @@
 			children = (
 				F6EC983B223289C800FC17F7 /* Common */,
 				F6EC984122328B1400FC17F7 /* Controllers */,
+				F6EC985A22329F5800FC17F7 /* Extensions */,
+				F6EC98472232997900FC17F7 /* Flow */,
+				F6EC984A223299F200FC17F7 /* Network */,
 				F6EC983E22328A1800FC17F7 /* Types */,
 				F6EC981D2232880900FC17F7 /* ViewController.swift */,
-				F6EC981F2232880900FC17F7 /* Main.storyboard */,
 				F6EC98222232880C00FC17F7 /* Assets.xcassets */,
-				F6EC98242232880C00FC17F7 /* LaunchScreen.storyboard */,
 				F6EC98272232880C00FC17F7 /* Info.plist */,
 			);
 			path = TCSWeather;
@@ -149,18 +172,76 @@
 		F6EC984122328B1400FC17F7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F6EC984222328B2100FC17F7 /* BaseViewController */,
+				F6EC984222328B2100FC17F7 /* Base */,
+				F6EC98662232C2D900FC17F7 /* Main */,
+				F6EC98612232B27100FC17F7 /* Splash */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		F6EC984222328B2100FC17F7 /* BaseViewController */ = {
+		F6EC984222328B2100FC17F7 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				F6EC984322328B5C00FC17F7 /* BaseViewController.swift */,
 				F6EC984522328B8000FC17F7 /* BaseView.swift */,
+				F6EC984322328B5C00FC17F7 /* BaseViewController.swift */,
 			);
-			path = BaseViewController;
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F6EC98472232997900FC17F7 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				F6EC98482232999600FC17F7 /* AppFlow.swift */,
+				F6EC985F2232AEF000FC17F7 /* SplashFlow.swift */,
+				F6EC985D2232A13200FC17F7 /* WeatherStep.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		F6EC984A223299F200FC17F7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F6EC984B223299FD00FC17F7 /* Base */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F6EC984B223299FD00FC17F7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F6EC985022329AB100FC17F7 /* ioBase.swift */,
+				F6EC984E22329A8000FC17F7 /* ioCentro.swift */,
+				F6EC984C22329A1300FC17F7 /* ioCentroType.swift */,
+				F6EC985222329B9A00FC17F7 /* ioError.swift */,
+				F6EC985422329BE800FC17F7 /* ioRequestAccess.swift */,
+				F6EC985622329C0900FC17F7 /* ioService.swift */,
+				F6EC985822329C2E00FC17F7 /* ioTransform.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F6EC985A22329F5800FC17F7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F6EC985B22329F9500FC17F7 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F6EC98612232B27100FC17F7 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				F6EC98642232B2BA00FC17F7 /* SplashView.swift */,
+				F6EC98622232B2A500FC17F7 /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		F6EC98662232C2D900FC17F7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		FB9E2513BE2DF7473AC945AC /* Frameworks */ = {
@@ -256,9 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6EC98262232880C00FC17F7 /* LaunchScreen.storyboard in Resources */,
 				F6EC98232232880C00FC17F7 /* Assets.xcassets in Resources */,
-				F6EC98212232880900FC17F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,15 +362,16 @@
 				"${PODS_ROOT}/Target Support Files/Pods-TCSWeather/Pods-TCSWeather-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
+				"${BUILT_PRODUCTS_DIR}/ModelMapper/Mapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/MoyaMapper/MoyaMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-ModelMapper/Moya_ModelMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxFlow/RxFlow.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -299,15 +379,16 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoyaMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ModelMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxFlow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -365,12 +446,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6EC98492232999600FC17F7 /* AppFlow.swift in Sources */,
 				F6EC984422328B5C00FC17F7 /* BaseViewController.swift in Sources */,
+				F6EC984D22329A1300FC17F7 /* ioCentroType.swift in Sources */,
+				F6EC98632232B2A500FC17F7 /* SplashViewController.swift in Sources */,
 				F6EC981E2232880900FC17F7 /* ViewController.swift in Sources */,
 				F6EC984022328A2800FC17F7 /* Units.swift in Sources */,
 				F6EC984622328B8000FC17F7 /* BaseView.swift in Sources */,
+				F6EC985122329AB100FC17F7 /* ioBase.swift in Sources */,
 				F6EC981C2232880900FC17F7 /* AppDelegate.swift in Sources */,
+				F6EC985E2232A13200FC17F7 /* WeatherStep.swift in Sources */,
+				F6EC98602232AEF000FC17F7 /* SplashFlow.swift in Sources */,
 				F6EC983D223289EB00FC17F7 /* Constants.swift in Sources */,
+				F6EC985722329C0900FC17F7 /* ioService.swift in Sources */,
+				F6EC98652232B2BA00FC17F7 /* SplashView.swift in Sources */,
+				F6EC985922329C2E00FC17F7 /* ioTransform.swift in Sources */,
+				F6EC985322329B9A00FC17F7 /* ioError.swift in Sources */,
+				F6EC985C22329F9500FC17F7 /* String.swift in Sources */,
+				F6EC984F22329A8000FC17F7 /* ioCentro.swift in Sources */,
+				F6EC985522329BE800FC17F7 /* ioRequestAccess.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,25 +485,6 @@
 			targetProxy = F6EC982D2232880C00FC17F7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F6EC981F2232880900FC17F7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F6EC98202232880900FC17F7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F6EC98242232880C00FC17F7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F6EC98252232880C00FC17F7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F6EC98332232880C00FC17F7 /* Debug */ = {
