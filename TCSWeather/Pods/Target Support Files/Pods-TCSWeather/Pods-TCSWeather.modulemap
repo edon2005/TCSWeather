@@ -1,0 +1,6 @@
+framework module Pods_TCSWeather {
+  umbrella header "Pods-TCSWeather-umbrella.h"
+
+  export *
+  module * { export * }
+}
