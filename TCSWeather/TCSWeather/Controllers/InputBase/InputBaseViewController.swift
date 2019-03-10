@@ -17,6 +17,7 @@ class InputBaseViewController<T: InputBaseView>: BaseViewController<T> {
     }
     
     func setupView() {
+        myView.scrollView.isScrollEnabled = false
         myView.backButton.setTitle("Back", for: .normal)
         myView.searchButton.setTitle("Search", for: .normal)
     }

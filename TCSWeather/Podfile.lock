@@ -18,6 +18,9 @@ PODS:
     - RxSwift (~> 4.3)
   - Result (4.1.0)
   - RxAtomic (4.4.1)
+  - RxBlocking (4.4.1):
+    - RxAtomic (~> 4.4)
+    - RxSwift (~> 4.0)
   - RxCocoa (4.4.1):
     - RxSwift (~> 4.0)
   - RxFlow (2.0.0):
@@ -25,6 +28,9 @@ PODS:
     - RxSwift (>= 4.4.0)
   - RxSwift (4.4.1):
     - RxAtomic (~> 4.4)
+  - RxTest (4.4.1):
+    - RxAtomic (~> 4.4)
+    - RxSwift (~> 4.0)
   - Swinject (2.6.0)
   - SwinjectAutoregistration (2.5.1):
     - Swinject (~> 2.5)
@@ -34,8 +40,10 @@ DEPENDENCIES:
   - Moya
   - Moya-ModelMapper
   - "NSObject+Rx"
+  - RxBlocking
   - RxFlow
   - RxSwift
+  - RxTest
   - Swinject
   - SwinjectAutoregistration
 
@@ -49,9 +57,11 @@ SPEC REPOS:
     - "NSObject+Rx"
     - Result
     - RxAtomic
+    - RxBlocking
     - RxCocoa
     - RxFlow
     - RxSwift
+    - RxTest
     - Swinject
     - SwinjectAutoregistration
 
@@ -64,12 +74,14 @@ SPEC CHECKSUMS:
   "NSObject+Rx": 9884a92f19b610795c431e10b4e601913b59c9e9
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
+  RxBlocking: 5508e90d36ca2304632dc9378ece4e9b5d4bf656
   RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
   RxFlow: f0212025e3747431b3be09c6be04bfde0a3bf5a4
   RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
+  RxTest: f8e548755ca3c7502dc41c7d3b28802c90115a38
   Swinject: 48a96cda93633cf2860697b4ce76ab5db9ebaca2
   SwinjectAutoregistration: f72bf894cbd2ee4a9153e00fa5208e93fb44d283
 
-PODFILE CHECKSUM: 854234f9f7c76a2a47af6e84b7de4f96cfcef41b
+PODFILE CHECKSUM: 6d9742bcf3f7b05bf7f0d8cb7b68ec1b7bb1d9ce
 
 COCOAPODS: 1.6.1
