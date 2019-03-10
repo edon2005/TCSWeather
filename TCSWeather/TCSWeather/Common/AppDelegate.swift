@@ -20,13 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        window = UIWindow(frame: UIScreen.main.bounds)
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.makeKeyAndVisible()
+        self.window = window
 
-        appFlow = AppFlow()
-        Flows.whenReady(flow1: appFlow) { root in
-            self.window?.rootViewController = root
-            self.window?.makeKeyAndVisible()
-        }
+        appFlow = AppFlow(withWindow: window)
         coordinator.coordinate(flow: appFlow, with: OneStepper(withSingleStep: WeatherStep.onboarding))
         return true
     }

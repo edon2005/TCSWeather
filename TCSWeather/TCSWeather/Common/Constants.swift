@@ -11,4 +11,5 @@ struct Constants {
     static var apiKey = "2e26f6f2a99964bc95df1bd2d2db67ae"
     static var unit = Units.metric
     static var cityName = "Brussel"
+    static var appName = "TCS Weather"
 }

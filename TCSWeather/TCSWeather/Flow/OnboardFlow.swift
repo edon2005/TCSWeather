@@ -9,7 +9,7 @@
 import Foundation
 import RxFlow
 
-class SplashFlow: Flow {
+class OnboardFlow: Flow {
     
     var root: Presentable {
         return rootViewController
@@ -18,7 +18,6 @@ class SplashFlow: Flow {
     private lazy var rootViewController: UINavigationController = {
         let viewController = UINavigationController()
         viewController.setNavigationBarHidden(true, animated: false)
-        viewController.navigationBar.topItem?.title = "OnBoarding"
         return viewController
     }()
     
@@ -29,7 +28,7 @@ class SplashFlow: Flow {
         case .splashScreen:
             return navigationToSplashScreen()
         case .splashScreenComplete:
-            return .end(forwardToParentFlowWithStep: WeatherStep.splashScreenComplete)
+            return .end(forwardToParentFlowWithStep: WeatherStep.onboardingComplete)
         default:
             return FlowContributors.none
         }
@@ -39,6 +38,5 @@ class SplashFlow: Flow {
         let splashViewController = SplashViewController()
         rootViewController.pushViewController(splashViewController, animated: false)
         return .one(flowContributor: .contribute(withNextPresentable: splashViewController, withNextStepper: splashViewController))
-    }
-    
+    }    
 }

@@ -29,6 +29,24 @@ class BaseViewController<T: BaseView>: UIViewController, Stepper {
         myView.setupView()
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupHideKeyboard()
+    }
+    
+    func setupHideKeyboard() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(dismissKeyboard))
+        
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
     deinit {
         print("🏁 \(type(of: self)): \(#function)")
     }

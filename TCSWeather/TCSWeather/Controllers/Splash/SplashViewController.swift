@@ -15,9 +15,10 @@ import NSObject_Rx
 import RxFlow
 
 class SplashViewController: BaseViewController<SplashView> {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        myView.label.text = "TCS Weather"
+        myView.label.text = Constants.appName
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -16,4 +16,10 @@ enum WeatherStep: Step {
     case splashScreenComplete
     
     case dashboard
+    
+    case selectInputType
+    case inputCity
+    case inputGeo
+    case showWeatherCity
+    case showWeatherGeo
 }

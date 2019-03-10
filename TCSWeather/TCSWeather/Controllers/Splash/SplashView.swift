@@ -28,10 +28,9 @@ class SplashView: BaseView {
         label.easy.layout(CenterY().with(.low), CenterX())
         label.font = UIFont(name: "Futura", size: 36)
 
-        
-        topView.backgroundColor = UIColor(displayP3Red: 44/255, green: 62/255, blue: 80/255, alpha: 1)
-        middleView.backgroundColor = UIColor(displayP3Red: 236/255, green: 240/255, blue: 241/255, alpha: 1)
-        bottomView.backgroundColor =  UIColor(displayP3Red: 231/255, green: 76/255, blue: 60/255, alpha: 1)
+        topView.backgroundColor = .customYellow
+        middleView.backgroundColor = .customWhite
+        bottomView.backgroundColor = .customRed
         label.textColor = UIColor(displayP3Red: 231/255, green: 76/255, blue: 60/255, alpha: 1)
     }
 
