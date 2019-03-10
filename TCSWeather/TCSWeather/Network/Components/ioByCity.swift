@@ -19,6 +19,6 @@ class ioByCity: WeatherRequestType {
     }
     
     func proceed(_ response: PublishSubject<Result<ModelWeather, ioError>>) {
-        ioCentro().request(endpoint: .searchCity(cityName), subject: response)
+        ioCentro().request(endpoint: .currentWeatherByCity(cityName), subject: response)
     }
 }

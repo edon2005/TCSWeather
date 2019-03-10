@@ -10,6 +10,7 @@ import Foundation
 import RxFlow
 import EasyPeasy
 import Swinject
+import SwinjectAutoregistration
 
 class DashboardFlow: Flow {
     var root: Presentable {
@@ -24,7 +25,12 @@ class DashboardFlow: Flow {
         return viewController
     }()
     
-    private let container:
+    private let container = Container() { container in
+        container.autoregister(WeatherRequestType.self, argument: String.self, initializer: ioByCity.init)
+        container.register(WeatherRequestType.self) { _, lat, lon in
+            ioByGeo(lat: lat, lon: lon)
+        }
+    }
     
     func navigate(to step: Step) -> FlowContributors {
         guard let step = step as? WeatherStep else { return FlowContributors.none }
@@ -35,6 +41,10 @@ class DashboardFlow: Flow {
             return navigationToInputCityScreen()
         case .inputGeo:
             return navigationToInputGeoScreen()
+        case let .showWeatherCity(name):
+            return navigationToShowWeatherScreen(name: name)
+        case let .showWeatherGeo(lat,lon):
+            return navigationToShowWeatherScreen(lat: lat, lon: lon)
         default:
             return FlowContributors.none
         }
@@ -61,5 +71,22 @@ class DashboardFlow: Flow {
         })
         return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vc))
     }
+    
+    private func navigationToShowWeatherScreen(name: String) -> FlowContributors {
+        let viewModel = ShowWeatherViewModel(ioApi: container ~> (WeatherRequestType.self, argument: name))
+        let vc = ShowWatherViewController(viewModel: viewModel)
+        UIView.transition(with: (rootViewController.view)!, duration: 0.75, options: .transitionFlipFromRight, animations: {
+            self.rootViewController.pushViewController(vc, animated: false)
+        })
+        return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vc))
+    }
 
+    private func navigationToShowWeatherScreen(lat: String, lon: String) -> FlowContributors {
+        let viewModel = ShowWeatherViewModel(ioApi: container ~> (WeatherRequestType.self, arguments: (lat, lon)))
+        let vc = ShowWatherViewController(viewModel: viewModel)
+        UIView.transition(with: (rootViewController.view)!, duration: 0.75, options: .transitionFlipFromRight, animations: {
+            self.rootViewController.pushViewController(vc, animated: false)
+        })
+        return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vc))
+    }
 }

@@ -16,7 +16,8 @@ public enum AdditionalParameterType {
 }
 
 enum ioService {
-    case currentWeather(String)
+    case currentWeatherByCity(String)
+    case currentWeatherByGeo(String, String)
     case searchCity(String)
 }
 
@@ -30,7 +31,9 @@ extension ioService: TargetType {
     
     var path: String {
         switch self {
-        case .currentWeather:
+        case .currentWeatherByCity:
+            return "/weather"
+        case .currentWeatherByGeo:
             return "/weather"
         case .searchCity:
             return "/find"
@@ -39,15 +42,17 @@ extension ioService: TargetType {
     
     var method: Moya.Method {
         switch self {
-        case .currentWeather, .searchCity:
+        case .currentWeatherByCity, .currentWeatherByGeo, .searchCity:
             return .get
         }
     }
     
     var task: Task {
         switch self {
-        case let .currentWeather(cityName):
+        case let .currentWeatherByCity(cityName):
             return .requestCompositeParameters(bodyParameters: [:], bodyEncoding: URLEncoding.httpBody, urlParameters: ["q":cityName])
+        case let .currentWeatherByGeo(lat, lon):
+            return .requestCompositeParameters(bodyParameters: [:], bodyEncoding: URLEncoding.httpBody, urlParameters: ["lat":lat, "lon":lon])
         case let .searchCity(cityName):
             return .requestCompositeParameters(bodyParameters: [:], bodyEncoding: URLEncoding.httpBody, urlParameters: ["q":cityName])
         }
@@ -66,7 +71,7 @@ extension ioService: TargetType {
     
     var authorizationType: AdditionalParameterType {
         switch self {
-        case .currentWeather, .searchCity:
+        case .currentWeatherByCity, .currentWeatherByGeo, .searchCity:
             return .need
         }
     }

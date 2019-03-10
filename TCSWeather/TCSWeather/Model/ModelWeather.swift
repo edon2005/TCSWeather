@@ -11,10 +11,12 @@ import Mapper
 
 //short prototype of model getting from openweather as JSON
 class ModelWeather: Mappable {
-    var main: MainData
+    let main: MainData
+    let name: String
     
     required init(map: Mapper) throws {
         main = try map.from("main")
-        print (main)
+        name = try map.from("name")
+        print (name, main)
     }
 }

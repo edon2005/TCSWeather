@@ -24,6 +24,7 @@
 		F6DD39F222352B3F0015CA54 /* ShowWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DD39F122352B3F0015CA54 /* ShowWeatherViewModel.swift */; };
 		F6DD39F622352EB10015CA54 /* WeatherRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DD39F522352EB10015CA54 /* WeatherRequestType.swift */; };
 		F6DD39F9223531130015CA54 /* ioByCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DD39F8223531130015CA54 /* ioByCity.swift */; };
+		F6DD39FB223540AC0015CA54 /* ioByGeo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DD39FA223540AC0015CA54 /* ioByGeo.swift */; };
 		F6EC981C2232880900FC17F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EC981B2232880900FC17F7 /* AppDelegate.swift */; };
 		F6EC98232232880C00FC17F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6EC98222232880C00FC17F7 /* Assets.xcassets */; };
 		F6EC98312232880C00FC17F7 /* TCSWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EC98302232880C00FC17F7 /* TCSWeatherTests.swift */; };
@@ -81,6 +82,7 @@
 		F6DD39F122352B3F0015CA54 /* ShowWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowWeatherViewModel.swift; sourceTree = "<group>"; };
 		F6DD39F522352EB10015CA54 /* WeatherRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRequestType.swift; sourceTree = "<group>"; };
 		F6DD39F8223531130015CA54 /* ioByCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ioByCity.swift; sourceTree = "<group>"; };
+		F6DD39FA223540AC0015CA54 /* ioByGeo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ioByGeo.swift; sourceTree = "<group>"; };
 		F6EC98182232880900FC17F7 /* TCSWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCSWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6EC981B2232880900FC17F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6EC98222232880C00FC17F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				F6DD39F8223531130015CA54 /* ioByCity.swift */,
+				F6DD39FA223540AC0015CA54 /* ioByGeo.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxFlow/RxFlow.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectAutoregistration/SwinjectAutoregistration.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -496,6 +500,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxFlow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectAutoregistration.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -561,6 +566,7 @@
 				F6EC984422328B5C00FC17F7 /* BaseViewController.swift in Sources */,
 				F6EC984D22329A1300FC17F7 /* ioCentroType.swift in Sources */,
 				F6EC98632232B2A500FC17F7 /* SplashViewController.swift in Sources */,
+				F6DD39FB223540AC0015CA54 /* ioByGeo.swift in Sources */,
 				F6DD39D7223455AF0015CA54 /* SelectInputTypeViewController.swift in Sources */,
 				F6DD39E4223483E60015CA54 /* InputBaseViewController.swift in Sources */,
 				F6EC984022328A2800FC17F7 /* Units.swift in Sources */,
@@ -772,6 +778,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39BFT23X4P;
 				INFOPLIST_FILE = TCSWeatherTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -793,6 +800,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39BFT23X4P;
 				INFOPLIST_FILE = TCSWeatherTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -20,6 +20,6 @@ enum WeatherStep: Step {
     case selectInputType
     case inputCity
     case inputGeo
-    case showWeatherCity
-    case showWeatherGeo
+    case showWeatherCity(name: String)
+    case showWeatherGeo(lat: String, lon: String)
 }

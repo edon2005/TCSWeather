@@ -34,6 +34,15 @@ class InputCityViewController: InputBaseViewController<InputCityView>, UITextFie
                 self.view.endEditing(true)
             })
             .disposed(by: rx.disposeBag)
+        
+        myView.searchButton
+            .rx
+            .tap
+            .bind(onNext: {[unowned self] in
+                guard let name = self.myView.cityTextField.text else { return }
+                self.steps.accept(WeatherStep.showWeatherCity(name: name.trimmingCharacters(in: .whitespaces)))
+            })
+            .disposed(by: rx.disposeBag)
     }
     
     override func viewDidAppear(_ animated: Bool) {

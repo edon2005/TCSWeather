@@ -36,10 +36,10 @@ class InputBaseView: BaseView {
         [backButton, searchButton].forEach {
             $0.backgroundColor = UIColor.blue.withAlphaComponent(0.5)
             $0.layer.cornerRadius = 4
-            $0.layer.shadowOpacity = 0.5
+            $0.layer.shadowOpacity = 1
             $0.layer.shadowRadius = 30
             $0.layer.shadowOffset = CGSize(width: 0, height: 15)
-            $0.layer.shadowColor = UIColor.black.cgColor
+            $0.layer.shadowColor = UIColor.blue.withAlphaComponent(0.5).cgColor
             $0.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .regular)
             $0.alpha = 0
         }

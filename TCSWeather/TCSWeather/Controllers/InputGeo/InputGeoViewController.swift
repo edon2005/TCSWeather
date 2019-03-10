@@ -45,6 +45,16 @@ class InputGeoViewController: InputBaseViewController<InputGeoView>, UITextField
             })
             .disposed(by: rx.disposeBag)
         
+        myView.searchButton
+            .rx
+            .tap
+            .bind(onNext: {[unowned self] in
+                guard let latString = self.myView.latitudeTextField.text?.trimmingCharacters(in: .whitespaces) else { return }
+                guard let lonString = self.myView.longitueTextField.text?.trimmingCharacters(in: .whitespaces) else { return }
+                self.steps.accept(WeatherStep.showWeatherGeo(lat: latString, lon: lonString))
+            })
+            .disposed(by: rx.disposeBag)
+
         
         [myView.latitudeTextField, myView.longitueTextField].forEach {
             $0.delegate = self
